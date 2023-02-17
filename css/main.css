@@ -1,0 +1,74 @@
+/* poprve jsem pouzil variables, calc a max() v css, se z toho stava programovani 🤯 */
+:root {
+    --navbar-width: 17%;
+    --navbar-min-width: 150px;
+}
+@font-face {
+    font-family: 'Now Thin';
+    src: url('../fonts/Now-Thin.otf');
+}
+
+
+
+html {
+    font-family: 'Now Thin' !important;
+}
+.side-nav {
+    position: fixed;
+    width: var(--navbar-width);
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: white;
+    padding: 10px;
+    overflow-x: hidden;
+    min-width: 150px;
+}
+
+.side-nav-inside {
+    border: 3px rgb(236, 236, 236) solid;
+    padding: 10px;
+    height: calc(100% - 40px);
+}
+
+.side-nav a {
+    color: black;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 18pt;
+}
+.content {
+    margin-left: max(calc(var(--navbar-width) + 20px), calc(var(--navbar-min-width) + 20px));
+    
+}
+
+@media only screen and (max-width: 850px) {
+    .side-nav {
+        height: auto;
+        width: 100%;
+        z-index: 9999;
+        padding: 0px;
+        overflow-x: hidden;
+        min-width: 1px;
+        border-bottom: 3px black solid;
+    }
+    .side-nav-inside {
+        border: none;
+        padding: 5px;
+        height: calc(100% - 40px);
+    }
+    .side-nav a {
+        text-decoration: none;
+        margin-bottom: 20px;
+        display:contents;
+    }
+    .content {
+        margin-top: 50px;
+        margin-left: 0;
+        
+    }
+}
