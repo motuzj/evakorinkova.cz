@@ -1,8 +1,9 @@
-/* poprve jsem pouzil variables, calc a max() v css, se z toho stava programovani 🤯 */
+/* sorry za hloupy css kod, poprve jsem pouzil variables, calc a max() v css, se z toho stava programovani 🤯 */
 :root {
     --navbar-width: 17%;
     --navbar-min-width: 150px;
 }
+
 @font-face {
     font-family: 'Now Thin';
     src: url('../fonts/Now-Thin.otf');
@@ -13,6 +14,15 @@
 html {
     font-family: 'Now Thin' !important;
 }
+
+h1 {
+    margin-bottom: 30px;
+}
+
+.current {
+    color: lightgray !important;
+}
+
 .side-nav {
     position: fixed;
     width: var(--navbar-width);
@@ -32,19 +42,24 @@ html {
     height: calc(100% - 40px);
 }
 
+.icon {
+    display: none !important;
+}
+
 .side-nav a {
     color: black;
     text-decoration: none;
-    margin-bottom: 20px;
     display: block;
     text-transform: uppercase;
     font-family: 'Oswald';
     font-size: 18pt;
 }
+
 .content {
     margin-left: max(calc(var(--navbar-width) + 20px), calc(var(--navbar-min-width) + 20px));
-    
+
 }
+
 
 @media only screen and (max-width: 850px) {
     .side-nav {
@@ -56,19 +71,62 @@ html {
         min-width: 1px;
         border-bottom: 3px black solid;
     }
+
     .side-nav-inside {
         border: none;
-        padding: 5px;
+        padding: 0px;
         height: calc(100% - 40px);
     }
-    .side-nav a {
+
+    .links {
         text-decoration: none;
-        margin-bottom: 20px;
-        display:contents;
+        text-align: center;
+        display: none;
     }
+
     .content {
-        margin-top: 50px;
         margin-left: 0;
-        
+
+    }
+
+    .icon {
+        display: block !important;
+        position: absolute;
+        right: 10px;
+        top: 0;
+
+    }
+
+    .side-nav {
+        overflow: hidden;
+        position: relative;
+    }
+
+    .side-nav-inside #links {
+        display: none;
+    }
+
+    .side-nav-inside a {
+        padding: 5px 10px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        text-align: center;
+    }
+
+    .side-nav-inside a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .side-nav a {
+
+        margin-bottom: 0;
+    }
+
+    .gallery-image {
+        width: 47vw;
     }
 }
