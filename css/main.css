@@ -7,6 +7,7 @@
 @font-face {
     font-family: 'Now Thin';
     src: url('../fonts/Now-Thin.otf');
+    font-display: swap;
 }
 
 
@@ -92,7 +93,7 @@ h1 {
     margin-bottom: 2px;
 }
 
-.social-media-links {
+.soc-site-eva {
     position: absolute;
     bottom: 30px;
 }
@@ -191,7 +192,7 @@ h1 {
         display: none;
     }
 
-    .social-media-links {
+    .soc-site-eva {
         position: static;
     }
 

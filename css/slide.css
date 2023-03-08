@@ -9,6 +9,7 @@
 @font-face {
   font-family: 'Now Thin';
   src: url('../fonts/Now-Thin.otf');
+  font-display: swap;
 }
 
 ol,
