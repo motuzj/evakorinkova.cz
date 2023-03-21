@@ -1,5 +1,6 @@
 # Webové stránky Evy Kořínkové
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/955c615b-d18f-4cf2-ab59-bee973df11d5/deploy-status)](https://app.netlify.com/sites/radiant-caramel-060983/deploys)  
 <https://evakorinkova.cz>
 
 ## Struktura souborů

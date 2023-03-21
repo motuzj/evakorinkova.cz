@@ -184,6 +184,7 @@ ul {
 
     .bio {
         max-width: none;
+        text-align: left;
     }
 
     .icon {
