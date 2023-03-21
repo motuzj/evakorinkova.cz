@@ -46,7 +46,7 @@ gcc html_generator_thumbnails.c && ./a.out
 
 ## Kontakt
 
-Všechny soubory k projektu mám soukromě na GitHubu a Codebergu a můžu zaslat.
+Všechny soubory k projektu mám soukromě na GitHubu a můžu zaslat.
 
 Juraj Motuz <motuzjuraj@gmail.com>  
-[GitHub](https://github.com/motuzj), [Codeberg](https://codeberg.org/motuzj/)
+[GitHub](https://github.com/motuzj)
