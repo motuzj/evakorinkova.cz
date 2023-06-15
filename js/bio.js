@@ -3,6 +3,16 @@ function detectUserLanguage() {
     return language.split('-')[0];
 }
 
+function setId(language) {
+    var tdElements = document.querySelectorAll("td.current_lang");
+    tdElements.forEach(function (td) {
+        td.classList.remove("current_lang");
+    });
+
+    var element = document.getElementById("switch-" + language);
+    element.classList.add("current_lang");
+}
+
 function changeLanguage(lang) {
     var paragraphDisplayed = false;
 
@@ -35,6 +45,9 @@ function changeLanguage(lang) {
             ul.hidden = false;
         });
     }
+    setId(lang);
 }
 
-changeLanguage(detectUserLanguage());
+var detectedLang = detectUserLanguage()
+
+changeLanguage(detectedLang);
