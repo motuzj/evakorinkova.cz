@@ -21,7 +21,40 @@
     <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/fontawesome.min.css">
     <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/brands.min.css">
     <link rel="stylesheet" href="../fontawesome-free-6.3.0-web/css/solid.min.css">
-    <link rel="stylesheet" href="../lightbox2-2.11.4/dist/css/lightbox.min.css">
+    <link rel="stylesheet" href="../lightbox2/dist/css/lightbox.min.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Asap&display=swap");
+        @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+        .language-switcher {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-family: 'Lato Light', sans-serif;
+            margin-bottom: 15px;
+        }
+
+        .language-switcher td {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0.25em 0em;
+            border-radius: 5px;
+            width: 5em;
+            transition: 0.25s ease;
+        }
+
+        .language-switcher td:hover {
+            background: rgb(236, 236, 236);
+            transition: 0.25s ease;
+        }
+
+        .current_lang {
+            background-color: rgb(236, 236, 236);
+        }
+    </style>
 </head>
 
 <body>
@@ -59,9 +92,15 @@
 
     <div class="content">
         <h1>About me</h1>
-        <a onclick='changeLanguage("en")' href="#" class="lang"><b>English</b></a>
-        <a onclick='changeLanguage("cs")' href="#" class="lang"><b>Čeština</b></a>
-        <a onclick='changeLanguage("fr")' href="#" class="lang"><b>Français</b></a>
+        <div class="language-switcher">
+            <table>
+                <tr>
+                    <td onclick='changeLanguage("en")' id="switch-en">English</td>
+                    <td onclick='changeLanguage("cs")' id="switch-cs">Česky</td>
+                    <td onclick='changeLanguage("fr")' id="switch-fr">Français</td>
+                </tr>
+            </table>
+        </div>
         <p class="bio" lang="en">Eva Kořínková was born in Prage 1978, graduated from the Institute of Creative
             Photography
             at the Silesian University in Opava. From 2005 she worked as a photographer at daily newspapers, then for
@@ -83,7 +122,7 @@
 
 
         <p class="bio vystavy" lang="cs">Výstavy: </p>
-        <ul lang="cs">
+        <ul class="bio" lang="cs">
             <li>Opava – studentské práce ITF – 2005</li>
             <li>Galerie Roxy – ITF 2006</li>
             <li>Francouzský institut – portréty 2018</li>
@@ -91,7 +130,7 @@
             <li>Francouzský institut- galerie 35 - Tváře Festivalu francouzského filmu – 2022</li>
         </ul>
         <p class="bio vystavy" lang="fr">Expositions: </p>
-        <ul lang="fr">
+        <ul class="bio" lang="fr">
             <li>Opava – travaux étudiants ITF – 2005</li>
             <li>Galerie Roxy – ITF 2006</li>
             <li>Institut français – Portraits 2018</li>
@@ -99,7 +138,7 @@
             <li>Institut français - galerie 35 - Visages du Festival du film français – 2022</li>
         </ul>
         <p class="bio vystavy" lang="en">Exhibitions: </p>
-        <ul lang="en">
+        <ul class="bio" lang="en">
             <li>Opava – ITF student works – 2005</li>
             <li>Galerie Roxy – ITF 2006</li>
             <li>French Institute – portraits 2018</li>
@@ -109,7 +148,7 @@
     </div>
 </body>
 <script src="../js/navbar.js"></script>
-<script src="../lightbox2-2.11.4/dist/js/lightbox-plus-jquery.min.js"></script>
+<script src="../lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
 <script src="../js/bio.js"></script>
 
 

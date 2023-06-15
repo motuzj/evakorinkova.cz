@@ -3,6 +3,14 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/955c615b-d18f-4cf2-ab59-bee973df11d5/deploy-status)](https://app.netlify.com/sites/radiant-caramel-060983/deploys)  
 <https://evakorinkova.cz>
 
+## Klonování
+
+Pro klonování včetně submodulů použijte:
+
+```sh
+git clone --recurse-submodules -b master https://github.com/lokesh/lightbox2.git
+```
+
 ## Struktura souborů
 
 Hlavní stránka je `/index.html`. Další jednotlivé stránky jsou ve složkách (např. `/weddings/index.html`), kvůli problémům který měl Google.
@@ -44,10 +52,3 @@ Nejprve upravte 5. (`char name[]`) a 7. řádek(`int maxNum`), případně i dal
 ```sh
 gcc html_generator_thumbnails.c && ./a.out
 ```
-
-## Kontakt
-
-Všechny soubory k projektu mám soukromě na GitHubu a můžu zaslat.
-
-Juraj Motuz <motuzjuraj@gmail.com>  
-[GitHub](https://github.com/motuzj)

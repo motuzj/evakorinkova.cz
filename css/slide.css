@@ -6,7 +6,8 @@
   border: 0;
 }
 
-body, html {
+body,
+html {
   width: 100%;
   height: 100%;
 }
@@ -78,6 +79,7 @@ button {
   font-weight: 500;
   font-style: normal;
   cursor: pointer;
+  transition: 0.4s ease;
 }
 
 button:hover {
@@ -220,6 +222,7 @@ button:hover {
   -ms-animation-delay: 42s;
   animation-delay: 42s;
 }
+
 .cb-slideshow li:nth-child(9) span {
   background-image: url(../img/slides/09.jpg);
   -webkit-animation-delay: 48s;
@@ -233,31 +236,31 @@ button:hover {
   .cb-slideshow li:nth-child(1) span {
     background-image: url(../img/slides/01.webp)
   }
-  
+
   .cb-slideshow li:nth-child(2) span {
     background-image: url(../img/slides/02.webp);
   }
-  
+
   .cb-slideshow li:nth-child(3) span {
     background-image: url(../img/slides/03.webp);
   }
-  
+
   .cb-slideshow li:nth-child(4) span {
     background-image: url(../img/slides/04.webp);
   }
-  
+
   .cb-slideshow li:nth-child(5) span {
     background-image: url(../img/slides/05.webp);
   }
-  
+
   .cb-slideshow li:nth-child(6) span {
     background-image: url(../img/slides/06.webp);
   }
-  
+
   .cb-slideshow li:nth-child(7) span {
     background-image: url(../img/slides/07.webp);
   }
-  
+
   .cb-slideshow li:nth-child(8) span {
     background-image: url(../img/slides/08.webp);
   }
