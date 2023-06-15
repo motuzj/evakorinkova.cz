@@ -1,0 +1,4 @@
+[submodule "lightbox2"]
+	path = lightbox2
+	url = https://github.com/lokesh/lightbox2.git
+	branch = master
